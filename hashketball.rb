@@ -125,8 +125,11 @@ def most_points_scored
   points_owner
 end
 
-def winning_team(home_team, away_team)
+def winning_team
   winner = ""
+  game_hash.each do |team, team_details_hash|
+    team_details_hash[:players].each do |player|
+      if 
   if home_team[:points] < away_team[:points]
     winner = away_team
   else
