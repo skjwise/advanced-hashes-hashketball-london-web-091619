@@ -127,7 +127,7 @@ end
 
 def winning_team(team_name1, team_name2)
   winner = ""
-  if 
+  if num_points_scored(team_name1) < num_points_scored(team_name2)
 end
 
 def player_with_longest_name
