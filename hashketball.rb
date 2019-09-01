@@ -128,7 +128,7 @@ end
 def winning_team(home_team, away_team)
   winner = ""
   team_points = 0
-  if num_points_scored() < num_points_scored()
+  if  < num_points_scored()
     winner = 
   else
     winner = 
