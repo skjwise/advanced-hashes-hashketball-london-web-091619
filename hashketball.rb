@@ -128,12 +128,14 @@ end
 def winning_team
   winner = ""
   game_hash.each do |team, team_details_hash|
+    team_points = 0
     team_details_hash[:players].each do |player|
-      if 
-  if home_team[:points] < away_team[:points]
-    winner = away_team
-  else
-    winner = home_team
+      if team_points += player[:points]
+        winner[team_details_hash[:team_name]] = team_points
+      else
+        winner.key(winner.max)
+      end
+    end
   end
   return winner
 end
