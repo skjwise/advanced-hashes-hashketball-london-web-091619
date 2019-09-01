@@ -156,6 +156,7 @@ def long_name_steals_a_ton?
   end
   max_steals = longest.max
   longest[longest.key(max_steals)] == max_steals
+  puts true
 end
 
 
