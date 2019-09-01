@@ -132,8 +132,6 @@ def winning_team
     team_details_hash[:players].each do |player|
       if team_points += player[:points]
         winner[team_details_hash[:team_name]] = team_points
-      else
-        winner.key(winner.max)
       end
     end
   end
