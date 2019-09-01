@@ -125,12 +125,12 @@ def most_points_scored
   points_owner
 end
 
-def winning_team
+def winning_team(home_team = 'Brooklyn Nets', away_team = 'Charlotte Hornets')
   winner = ""
-  if  < 
-    winner = 
+  if home_team[:points] < away_team[:points]
+    winner = away_team
   else
-    winner = 
+    winner = home_team
   end
   return winner
 end
