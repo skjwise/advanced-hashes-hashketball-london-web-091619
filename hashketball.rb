@@ -125,12 +125,12 @@ def most_points_scored
   points_owner
 end
 
-def winning_team(team1, team2)
+def winning_team(home_team, away_team)
   winner = ""
-  if num_points_scored(team_name1) < num_points_scored(team_name2)
-    winner = team_name2
+  if num_points_scored() < num_points_scored()
+    winner = 
   else
-    winner = team_name1
+    winner = 
   end
   return winner
 end
