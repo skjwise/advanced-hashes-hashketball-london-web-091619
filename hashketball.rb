@@ -134,8 +134,7 @@ def winning_team
     end
     winner[team_details_hash[:team_name]] = team_points
   end
-  winner.key(winner.max)
-  binding.pry
+  winner.key(winner.values.max)
 end
 
 def player_with_longest_name
